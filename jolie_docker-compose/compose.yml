@@ -1,0 +1,13 @@
+services:
+  server:
+    image: server 
+    build: server
+    container_name: server 
+    platform: linux/amd64
+  client:
+    image: client
+    build: client
+    container_name: client
+    platform: linux/amd64
+    depends_on: 
+     - server 
