@@ -106,6 +106,7 @@ public class BankSteps {
         getBank();
         Account a = bank.getAccount(merchantAccountId);
         assertEquals(0, a.getBalance().compareTo(BigDecimal.valueOf(int1)));
+
     }
     @After
     public void cleanupBankAccounts() throws BankServiceException_Exception {
