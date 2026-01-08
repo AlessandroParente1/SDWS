@@ -8,6 +8,9 @@ public class Person implements Serializable, PersonInterface{ // What does seria
   private String name;
   private String Country;
   private String id;
+  public String lastName;
+  public String cpr;
+  public String bankAccount;
 
   public Person() {
   }
@@ -26,6 +29,30 @@ public class Person implements Serializable, PersonInterface{ // What does seria
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public String getLastName() {
+    return lastName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+
+  public String getCpr() {
+    return cpr;
+  }
+
+  public void setCpr(String cpr) {
+    this.cpr = cpr;
+  }
+
+  public String getBankAccount() {
+    return bankAccount;
+  }
+
+  public void setBankAccount(String bankAccount) {
+    this.bankAccount = bankAccount;
   }
 
   public String getCountry() {
