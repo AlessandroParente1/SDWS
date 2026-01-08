@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 //
 
-public class Person implements Serializable { // What does serializeable do?
+public class Person implements Serializable, PersonInterface{ // What does serializeable do?
   private String name;
   private String Country;
   private String id;
@@ -34,7 +34,6 @@ public class Person implements Serializable { // What does serializeable do?
 
   public void setCountry(String Country) {
     this.Country = Country;
-
   }
 
   public static void main(String[] args) {
