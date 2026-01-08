@@ -1,12 +1,11 @@
 package org.acme.steps;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Payment {
     private int amount;
     private String customerId;
     private String merchantId;
+    private String descString;
 
     public Payment() {}
 
@@ -33,5 +32,12 @@ public class Payment {
     }
     public void setMerchantId(String merchantId) {
         this.merchantId = merchantId;
-    }    
+    }  
+    
+ public String getDescription() {
+        return descString;
+    }
+    public void setDescription(String descString) {
+        this.descString = descString;
+    }  
 }
