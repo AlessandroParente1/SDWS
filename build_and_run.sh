@@ -12,10 +12,11 @@ docker compose up -d
 # simple-rest directory
 # clean up images
 docker image prune -f 
-popd
+# popd
 
 # Give the Web server a chance to finish start up
 sleep 2 
 
 # pushd client 
 mvn clean test
+popd
