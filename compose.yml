@@ -1,0 +1,8 @@
+services:
+  dtuPay:
+    build: . 
+    image: dtu-pay 
+    container_name: dtu-pay 
+    ports:
+     - "8080:8080"
+
