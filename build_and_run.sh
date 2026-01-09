@@ -19,4 +19,3 @@ sleep 2
 
 # pushd client 
 mvn clean test
-popd
