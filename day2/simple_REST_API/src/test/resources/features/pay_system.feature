@@ -1,5 +1,4 @@
 Feature: Payment
-
   Scenario: Successful Payment
     Given a customer with name "Susane", last name "Bedin", and CPR "092111-2111"
     And the customer is registered with the bank with an initial balance of 1000 kr
